@@ -2,14 +2,21 @@
 Analysis of twitter data of Barack Obama and Mitt Romney
 
 Data: 7000 tweets of both Barack Obama and Mitt Romney
+
 Attributes: Annotated Tweet, Class
+
 Classes: 0:Neutral,1:positive,-1:negative,2:neither positive nor negative
+
 Libraries:Pandas,Numpy,Scikit-Learn,Keras,NLTK
 
 files: 1. KaggleWord2VecUtility.py- Preprocessing
+
 2. Senti_romney.ipynb- Initial attempt to understand data
+
 3.Obama_final.ipynb- Initial attempt to understand data
+
 3. RNN_keras.ipynb- Initial attempt at Neural Networks
+
 4. Romney_ana.ipynb- Model with highest accuracy
 
 Summary:
