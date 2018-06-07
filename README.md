@@ -24,16 +24,24 @@ Summary:
 
 Preprocessing
 ->First, preprocessing was done to remove HTML tags, hyperlinks and twitter handles
+
 ->Hashtags were replaced by the words themselves ("#obamarocks"->"obamarocks"). The words were not split further as valuable information provided by the hashtags could be lost
+
 ->NLTK's preprocessing APIs are used to optimize the data
+
 ->A combination of Porter and Snowball stemmer is used
+
 ->A dictionary of positive and negative words was created and run through the entire list of hashtags to extract sentiment information
+
 ->(*)A common name "Entity" was given instead of names that contained obama and romney. This helped get an overall better accuracy on the test data. The model learned the sentiment words better.
 
 Machine Learning Pipeline
 
 -> Tfidfvectorizer(ngrams:1-4) with hyperparameter tuning performed the best vectorization.
+
 -> Multiple feature selection techniques like PCA and LDA were tried but not found to impact the accuracy
+
 -> A tuned Linear SVM was found to give the best accuracy
+
 -> Multiple RNN models were tried but were not found to perform better than the SVM model. Tuning of the parameters could have probably given better results.
 
